@@ -1,6 +1,6 @@
 {
   "name": "@iam-hussain/elementary",
-  "version": "1.3.10",
+  "version": "1.0.0",
   "description": "Modern component library",
   "main": "./lib/index.js",
   "exports": {
