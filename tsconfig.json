@@ -1,14 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "moduleResolution": "NodeNext", // don't have to import actual filenames, can import extensionless files
-    "declaration": true, // generate .d.ts files
-    "sourceMap": true, // generate source map
-    "outDir": "lib", // output compiled js, d.ts, and source map to dist folder
-    "lib": ["dom", "es2020", "es2018.promise", "ESNext.Intl"],
-    "module": "NodeNext",
-    "strict": true
+    "target": "es5",
+    "lib": ["dom", "dom.iterable"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["./lib"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "./lib"]
 }

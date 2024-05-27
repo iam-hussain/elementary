@@ -5,20 +5,15 @@
   "main": "./lib/index.js",
   "exports": {
     ".": {
-      "import": "./lib",
-      "require": "./lib/index.js"
-    },
-    "./validation": "./lib/validation/index.js"
+      "import": "./src",
+      "require": "./src/index.js"
+    }
   },
   "files": [
-    "lib",
     "esm",
     "src"
   ],
   "scripts": {
-    "clean": "rimraf lib",
-    "prebuild": "npm run clean",
-    "build": "tsc",
     "patch": "npm version --patch && git push --follow-tags",
     "release": "release-it",
     "lint": "eslint .",
@@ -33,7 +28,7 @@
   },
   "keywords": [
     "copilot",
-    "lib",
+    "src",
     "package"
   ],
   "author": "iam-hussain",
@@ -45,22 +40,30 @@
   "devDependencies": {
     "@types/lodash": "^4.17.0",
     "@types/node": "^20.12.7",
+    "@types/react": "^18.3.3",
     "release-it": "^17.1.1",
     "rimraf": "^5.0.5",
+    "tailwindcss": "^3.4.3",
     "typescript": "^5.4.3"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.6.0",
     "@typescript-eslint/parser": "^7.6.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-simple-import-sort": "^12.0.0",
     "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5"
+    "nativewind": "^2.0.11",
+    "prettier": "^3.2.5",
+    "react": "^18.2.0",
+    "react-native": "^0.74.1",
+    "tailwind-merge": "^2.3.0"
   },
-  "types": "./lib/index.d.ts",
+  "types": "./src/index.d.ts",
   "directories": {
-    "lib": "lib"
+    "src": "src"
   }
 }
