@@ -1,11 +1,11 @@
 {
-  "name": "@iam-hussain/qd-copilot",
+  "name": "@iam-hussain/elementary",
   "version": "1.3.10",
-  "description": "A support lib for quick dine",
+  "description": "Modern component library",
   "main": "./lib/index.js",
   "exports": {
     ".": {
-      "import": "./lib/index.js",
+      "import": "./lib",
       "require": "./lib/index.js"
     },
     "./validation": "./lib/validation/index.js"
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iam-hussain/qd-copilot.git"
+    "url": "git+https://github.com/iam-hussain/elementary.git"
   },
   "publishConfig": {
     "@iam-hussain:registry": "https://npm.pkg.github.com"
@@ -39,9 +39,9 @@
   "author": "iam-hussain",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iam-hussain/qd-copilot/issues"
+    "url": "https://github.com/iam-hussain/elementary/issues"
   },
-  "homepage": "https://github.com/iam-hussain/qd-copilot#readme",
+  "homepage": "https://github.com/iam-hussain/elementary#readme",
   "devDependencies": {
     "@types/lodash": "^4.17.0",
     "@types/node": "^20.12.7",
@@ -57,9 +57,7 @@
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-simple-import-sort": "^12.0.0",
     "lint-staged": "^15.2.2",
-    "lodash": "^4.17.21",
-    "prettier": "^3.2.5",
-    "zod": "^3.22.4"
+    "prettier": "^3.2.5"
   },
   "types": "./lib/index.d.ts",
   "directories": {
