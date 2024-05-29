@@ -1,11 +1,10 @@
-import nativewind from 'nativewind/tailwind/native';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: ['./src/**/*.tsx'],
   prefix: '',
   important: 'html',
-  plugins: [nativewind({})],
+  plugins: [require('nativewind/tailwind/css')],
   darkMode: ['class'],
   theme: {
     screens: {
