@@ -88,7 +88,7 @@ const StyledView = styled(View);
 const StyledText = styled(Text);
 const StyledPressable = styled(Pressable);
 
-const ButtonComponent = React.forwardRef<any, ButtonProps & ButtonIconProps>(
+export const Button = React.forwardRef<any, ButtonProps & ButtonIconProps>(
   (
     {
       className,
@@ -126,8 +126,6 @@ const ButtonComponent = React.forwardRef<any, ButtonProps & ButtonIconProps>(
     );
   }
 );
-ButtonComponent.displayName = "Button";
 
-const Button = styled(ButtonComponent);
+Button.displayName = "Button";
 
-export { Button, buttonVariants };
